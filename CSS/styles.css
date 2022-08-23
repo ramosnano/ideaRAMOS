@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    }
+
+#body {
+    background-color:hsla(0,100%,50%,1);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#deportesContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px auto auto auto auto auto auto;
+    height: 100vh;
+}
+
+#promoTop {
+    background-color: #f1f2f2;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#imagenFondo {
+    height: 500px;
+    width: 100%;
+    background-image: url('../assets/imagendeportiva.jpg');
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+#header {
+    background-color: white;
+}
+
+#header .logo {
+    padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+    /* border: 1px solid #000;
+    display: flex;
+    padding: 10px 50px;
+    margin: 10px 500px;
+    background-color: white;
+    border-radius: 20px; */
+}
+
+.logo h1 {
+	font-size: 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuInicial {
+    padding-bottom: 10px;
+}
+
+.menuInicial a {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 10px;
+    margin: 1px 10px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    display: inline-block;
+    min-width: 170px;
+    text-align: center;
+}
+
+.menuInicial a:hover {
+    background: rgba(161, 124, 153, 0.547);
+    color: white;
+}
+
+
+/* .logo .inicialesLogo {
+	padding: 5px;
+	border: 2px solid #000;
+    background-color: white;
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 15px;
+} */
+
+#header .menuInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#header .cartM {
+    height: 32px;
+    width: 4%;
+    display: inline;
+    align-items: center;
+}
+
+#header .userM {
+    height: 32px;
+    width: 4%;
+    display: flex;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .tituloMain {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+#main .textoMain {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: 30px;
+    text-align: justify;
+}
+
+/* FELX */
+#section1 .textoProducto {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#section1 .precioProducto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding-top: 5px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#section1 .flexContainer {
+    width: 100%;
+    height: auto; /*100vh completa toda la pantalla */
+    padding: 10px;
+    display: flex; /* las acomodo una al lado de la otra */
+    gap: 10px; /* separacion entre ITEMS */
+    flex-direction: row; /* o column y lo pongo uno abajo del*/
+    flex-wrap: wrap; /*se acomoda en pantalla*/
+    justify-content: space-around; /* alineo en horizontal space-evenly: centra todo . space-around centra el del medio y acomoda los laterales */
+    align-items: center; /*alineo en vertical - stretch todos iguales quedan */
+    align-content: center;
+}
+
+#section1 .flexContainer .flexItem {
+    width: 200px;
+    height: auto;
+}
+
+#section1 .flexContainer .flexItem img{
+    width: 100%;
+    height: auto;
+    transition: .3s all ease;
+}
+
+#section1 .flexContainer .flexItem img:hover {
+    transform: scale(1.2);
+    box-shadow: 9px 18px 20px 0px rgb(0 0 0 / 40%);
+}
+
+
+#section2 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    margin: 30px;
+    text-align: justify;
+    display: flex;
+}
+
+#footer {
+    width: 100%;
+    background-color: #f1f2f2;
+    padding: 10px;
+}
+
+#footer .footerContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+}
+
+#footer .footerContainer a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #666;
+}
+
+.footerContainer .menuFooter a {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    display: inline-block;
+}
+
+.footerContainer ul li {
+    list-style: none;
+}
+
+/*CONTACTO*/
+#cargaContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.ayuda .datosCon {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    padding: 1px 30px;
+    font-size: 17px;
+    margin: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.datosCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datosMensaje {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datosConfirmacion {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datosEnviarLimpiar {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*MEDIA CELULAR*/
+@media screen and (max-width: 860px) { 
+    #deportesContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px auto auto auto auto auto;
+        height: 100vh;
+    }
+
+    #header .menuInicial {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menuInicial a {
+        font-family: 'Quicksand', sans-serif;
+        padding: 5px 5px;
+        margin: 1px 5px;
+        text-decoration: none;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        color: black;
+        display: inline-block;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #main .tituloMain h2 {
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        align-content: center;
+    }
+    
+    #main .textoMain {
+        display: none;
+    }
+
+    #imagenFondo {
+        display: none;
+    }
+    
+    #main .tituloMain {
+        width: 100%;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #section1 .flexContainer {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        gap: 10px; 
+        flex-direction: row;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+
+    #section1 .textoProducto {
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    #section1 .precioProducto {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        color: black;
+        padding-top: 2px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    #section1 .flexContainer .flexItem img{
+        width: 80%;
+        height: auto;
+    }
+
+    #section1 .flexContainer .flexItem img:hover {
+        transform: none; 
+    }
+
+    #section2 p{
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    #footer {
+        width: 100%;
+        background-color: #f1f2f2;
+        padding: 10px;
+    }
+
+    #footer .footerContainer a {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        color: #666;
+    }
+
+    #footer .footerContainer .tituloFooter {
+        font-size: 12px;
+
+    }
+
+    #footer .menuFooter {
+        font-size: 10px;
+    }
+
+    #footer .footerCol2 {
+        display: none;
+    }
+    
+    .ayuda .datosCon {
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        padding: 1px 20px;
+        font-size: 12px;
+        margin: 5px;
+        padding-bottom: 5px;
+        text-align: justify;
+        border-radius: 10px;
+    }
+
+    .datosMensaje {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
