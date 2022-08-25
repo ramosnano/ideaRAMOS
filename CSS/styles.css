@@ -34,8 +34,13 @@
     font-weight: bold;
 }
 
+/* .buscarProductos{
+    padding: 10px 450px;
+    display: flex;
+} */
+
 #imagenFondo {
-    height: 500px;
+    height: 490px;
     width: 100%;
     background-image: url('../assets/imagendeportiva.jpg');
     background-position: top center;
@@ -52,12 +57,6 @@
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 3px;
-    /* border: 1px solid #000;
-    display: flex;
-    padding: 10px 50px;
-    margin: 10px 500px;
-    background-color: white;
-    border-radius: 20px; */
 }
 
 .logo h1 {
@@ -124,6 +123,7 @@
 }
 
 #main {
+    background-color: #f1f2f2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,12 +131,19 @@
 }
 
 #main .tituloMain {
-    color: white;
+
+    color: black;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
+}
+
+#main .tituloMain h2 {
+
+    font-weight: bold;
 }
 
 #main .textoMain {
@@ -166,7 +173,7 @@
 #section1 .flexContainer {
     width: 100%;
     height: auto; /*100vh completa toda la pantalla */
-    padding: 10px;
+    padding: 25px;
     display: flex; /* las acomodo una al lado de la otra */
     gap: 10px; /* separacion entre ITEMS */
     flex-direction: row; /* o column y lo pongo uno abajo del*/
@@ -193,18 +200,30 @@
 }
 
 
-#section2 {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    margin: 30px;
-    text-align: justify;
-    display: flex;
+#section2 h5 p{
+    background-color: white;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#section2 h8 p{
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
 }
 
 #footer {
     width: 100%;
     background-color: #f1f2f2;
     padding: 10px;
+}
+
+#footer .tituloFooter{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #footer .footerContainer {
@@ -240,8 +259,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows:  auto auto auto auto auto;
 }
+
 
 .ayuda .datosCon {
     font-family: 'Quicksand', sans-serif;
@@ -278,7 +298,7 @@
 }
 
 .datosEnviarLimpiar {
-    padding-top: 10px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -318,7 +338,7 @@
     }
 
     #main .tituloMain h2 {
-        color: white;
+        color: black;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
         font-size: 30px;
@@ -328,6 +348,8 @@
     #main .textoMain {
         display: none;
     }
+
+
 
     #imagenFondo {
         display: none;
@@ -381,8 +403,8 @@
         width: 100%;
         font-family: 'Quicksand', sans-serif;
         color: black;
-        text-align: justify;
-        font-size: 12px;
+        text-align: center;
+        font-size: 13px;
     }
 
     #footer {

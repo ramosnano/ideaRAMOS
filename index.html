@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,23 +16,6 @@
 
 </head>
 <body id="body">
-
-    <!-- <div id="deportesContainer">
-        <header id="header">
-            <nav>
-                <ul class="menuInicial">
-                    <li><a href="index.html">FERNANDODEPORTES</a></li>
-                    <li><a href="./pages/hombres.html">HOMBRES</a></li>
-                    <li><a href="./pages/mujeres.html">MUJERES</a></li>
-                    <li><a href="./pages/nenes.html">NIÑOS</a></li>
-                    <li><a href="./pages/contacto.html">AYUDA</a></li>
-                    <li><a href="./pages/faq.html">FAQ.</a></li>
-                    <img src="./assets/bag-check.svg" alt="Cart" class="cartM">
-                    <img src="./assets/person-circle.svg" alt="User" class="userM">
-                </ul>
-            </nav>
-        </header> -->
-
 
 	<div id="deportesContainer">
         <div id="promoTop">
@@ -47,6 +33,14 @@
                 <a href="./pages/contacto.html">AYUDA</a>
                 <a href="./pages/faq.html">FAQ.</a>
 			</nav>
+            <nav class="navbar bg-white">
+                <div class="container-fluid justify-content-center">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-sm btn-outline-secondary" type="submit">IR</button>
+                    </form>
+                </div>
+            </nav>
 		</header>
 
         <div id="imagenFondo" alt="imagendeportiva">
@@ -56,7 +50,39 @@
             <div class="tituloMain">
                 <h2>PRODUCTOS DESTACADOS</h2>
             </div>
-            <h8><p class="textoMain">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/CA1.JPG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/CA2.JPG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/CA3.JPG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- <h8><p class="textoMain">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.
                 Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio
                 eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur,
@@ -64,7 +90,7 @@
                 Eligendi tenetur aperiam laudantium nobis repellat quibusdam cum debitis, consectetur dolorem fugit magnam veniam non saepe,
                 reiciendis, tempora nihil quia nisi, harum? Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Magnam cum excepturi ut
                 ipsa veniam suscipit nostrum aut nulla voluptas, blanditiis accusamus soluta temporibus laborum atque maiores amet incidunt placeat maxime.
-            </p></h8>  
+            </p></h8>   -->
         </main>
 
         <section id="section1">    
@@ -103,7 +129,7 @@
         </section>
 
         <section id="section2">
-            <h8><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendis ex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eligendi tenetur aperiam laudantium nobis repellat quibusdam cum debitis, consectetur dolorem fugit magnam veniam non saepe, reiciendis, tempora nihil quia nisi, harum? Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Magnam cum excepturi ut ipsa veniam suscipit nostrum aut nulla voluptas, blanditiis accusamus soluta temporibus laborum atque maiores amet incidunt placeat maxime.</p></h8>
+            <h8><p>¡Suscribite y obtené $600 de regalo!.</p></h8>
         </section>
 
         <footer id="footer">
@@ -138,5 +164,9 @@
         </footer>
 
     </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
