@@ -235,7 +235,7 @@
 
 #section2 h8 p{
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
     padding: 10px;
     font-size: 17px;
