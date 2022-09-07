@@ -1,0 +1,106 @@
+.main {
+  background-color: #f1f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__tituloMain {
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.main__tituloMain h2 {
+  font-weight: bold;
+}
+.main__textoMain {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  margin: 30px;
+  text-align: justify;
+}
+
+/*FLEX*/
+#section1 .textoProducto {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  text-align: justify;
+  font-size: 18px;
+}
+#section1 .precioProducto {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-top: 5px;
+  text-align: justify;
+  font-size: 20px;
+}
+#section1 .textoProductoC {
+  background-color: white;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  padding-left: 5px;
+  text-align: justify;
+  font-size: 18px;
+}
+#section1 .precioProductoC {
+  background-color: #f1f2f2;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+}
+#section1 .flexContainer {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+#section1 .flexContainer .flexItem {
+  width: 200px;
+  height: auto;
+}
+#section1 .flexContainer .flexItem img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s all ease;
+}
+#section1 .flexContainer .flexItem img:hover {
+  transform: scale(1.2);
+  box-shadow: 9px 18px 20px 0px rgba(0, 0, 0, 0.4);
+}
+#section1 .flexContainerC {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+#section1 .flexContainerC .flexItemC {
+  background-color: white;
+  width: 200px;
+  height: auto;
+}
+#section1 .flexContainerC .flexItemC img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s all ease;
+}/*# sourceMappingURL=styleMain.css.map */

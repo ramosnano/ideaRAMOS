@@ -107,123 +107,6 @@
     align-items: center;
 }
 
-#main {
-    background-color: #f1f2f2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#main .tituloMain {
-    color: black;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 20px;
-}
-
-#main .tituloMain h2 {
-    font-weight: bold;
-}
-
-#main .textoMain {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    margin: 30px;
-    text-align: justify;
-}
-
-/* FELX */
-#section1 .textoProducto {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    text-align: justify;
-    font-size: 18px;
-}
-
-#section1 .precioProducto {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    color: black;
-    padding-top: 5px;
-    text-align: justify;
-    font-size: 20px;
-}
-
-#section1 .textoProductoC {
-    background-color: white;
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    text-align: justify;
-    font-size: 18px;
-}
-
-#section1 .precioProductoC {
-    background-color: #f1f2f2;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    padding-top: 5px;
-    color: black;
-    text-align: justify;
-    font-size: 20px;
-}
-
-#section1 .flexContainer {
-    width: 100%;
-    height: auto; /*100vh completa toda la pantalla */
-    padding: 25px;
-    display: flex; /* las acomodo una al lado de la otra */
-    gap: 10px; /* separacion entre ITEMS */
-    flex-direction: row; /* o column y lo pongo uno abajo del*/
-    flex-wrap: wrap; /*se acomoda en pantalla*/
-    justify-content: space-around; /* alineo en horizontal space-evenly: centra todo . space-around centra el del medio y acomoda los laterales */
-    align-items: center; /*alineo en vertical - stretch todos iguales quedan */
-    align-content: center;
-}
-
-#section1 .flexContainerC {
-    width: 100%;
-    height: auto; /*100vh completa toda la pantalla */
-    padding: 50px;
-    display: flex; /* las acomodo una al lado de la otra */
-    gap: 10px; /* separacion entre ITEMS */
-    flex-direction: row; /* o column y lo pongo uno abajo del*/
-    flex-wrap: wrap; /*se acomoda en pantalla*/
-    justify-content: space-around; /* alineo en horizontal space-evenly: centra todo . space-around centra el del medio y acomoda los laterales */
-    align-items: center; /*alineo en vertical - stretch todos iguales quedan */
-    align-content: center;
-}
-
-#section1 .flexContainer .flexItem {
-    width: 200px;
-    height: auto;
-}
-
-#section1 .flexContainerC .flexItemC {
-    background-color: white;
-    width: 200px;
-    height: auto;
-}
-
-#section1 .flexContainer .flexItem img{
-    width: 100%;
-    height: auto;
-    transition: .3s all ease;
-}
-
-#section1 .flexContainerC .flexItemC img{
-    width: 100%;
-    height: auto;
-    transition: .3s all ease;
-}
-
-#section1 .flexContainer .flexItem img:hover {
-    transform: scale(1.2);
-    box-shadow: 9px 18px 20px 0px rgb(0 0 0 / 40%);
-}
 
 #section2 h5 p{
     background-color: white;
@@ -236,23 +119,22 @@
 #section2 h8 p{
     background-color: white;
     /* text-align: center; */
-    font-weight: bold;
     padding: 10px;
     font-size: 17px;
 }
 
-#footer {
+.footer {
     width: 100%;
     background-color: #f1f2f2;
     padding: 10px;
 }
 
-#footer .tituloFooter{
+.footer .tituloFooter{
     font-size: 20px;
     font-weight: bold;
 }
 
-#footer .footerContainer {
+.footer .footerContainer {
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
@@ -261,7 +143,7 @@
     align-content: center;
 }
 
-#footer .footerContainer a {
+.footer .footerContainer a {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     text-decoration: none;
@@ -363,7 +245,7 @@
         text-align: center;
     }
 
-    #main .tituloMain h2 {
+    .main .main__tituloMain h2 {
         color: black;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
@@ -371,7 +253,7 @@
         align-content: center;
     }
     
-    #main .textoMain {
+    .main .main__textoMain {
         display: none;
     }
 
@@ -379,7 +261,7 @@
         display: none;
     }
     
-    #main .tituloMain {
+    .main .tituloMain {
         width: 100%;
         color: white;
         font-family: 'Quicksand', sans-serif;
