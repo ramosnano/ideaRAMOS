@@ -107,18 +107,24 @@
     align-items: center;
 }
 
-
 #section2 h5 p{
     background-color: white;
     text-align: left;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #section2 h8 p{
+    /* background-color: white; */
+    padding: 5px;
+    font-size: 17px;
+}
+
+#section3 h8 p{
     background-color: white;
-    /* text-align: center; */
+    text-align: center;
+    font-weight: bold;
     padding: 10px;
     font-size: 17px;
 }
@@ -269,53 +275,6 @@
         font-size: 20px;
     }
 
-    #section1 .flexContainer {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        display: flex;
-        gap: 10px; 
-        flex-direction: row;
-        justify-content: center; 
-        flex-wrap: wrap;
-    }
-
-    #section1 .flexContainerC {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        display: flex;
-        gap: 10px; 
-        flex-direction: row;
-        justify-content: center; 
-        flex-wrap: wrap;
-    }
-
-    #section1 .textoProducto {
-        font-family: 'Quicksand', sans-serif;
-        color: black;
-        text-align: justify;
-        font-size: 16px;
-    }
-    
-    #section1 .precioProducto {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-        color: black;
-        padding-top: 2px;
-        text-align: justify;
-        font-size: 18px;
-    }
-
-    #section1 .flexContainer .flexItem img{
-        width: 80%;
-        height: auto;
-    }
-
-    #section1 .flexContainer .flexItem img:hover {
-        transform: none; 
-    }
-
     #section2 h8 p{
         width: 100%;
         font-family: 'Quicksand', sans-serif;
@@ -325,29 +284,29 @@
         font-size: 15px;
     }
 
-    #footer {
+    .footer {
         width: 100%;
         background-color: #f1f2f2;
         padding: 10px;
     }
 
-    #footer .footerContainer a {
+    .footer .footerContainer a {
         font-family: 'Quicksand', sans-serif;
         font-size: 10px;
         text-decoration: none;
         color: #666;
     }
 
-    #footer .footerContainer .tituloFooter {
+    .footer .footerContainer .tituloFooter {
         font-size: 12px;
 
     }
 
-    #footer .menuFooter {
+    .footer .menuFooter {
         font-size: 10px;
     }
 
-    #footer .footerCol2 {
+    .footer .footerCol2 {
         display: none;
     }
     

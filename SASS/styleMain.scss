@@ -29,40 +29,45 @@
 /*FLEX*/
 
 #section1 {
-    .textoProducto {
-        font-family: 'Quicksand', sans-serif;
-        color: black;
-        text-align: justify;
-        font-size: 18px;
-    }
-
-    .precioProducto {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-        color: black;
-        padding-top: 5px;
-        text-align: justify;
-        font-size: 20px;
-    }
-
-    .textoProductoC {
-        background-color: white;
-        font-family: 'Quicksand', sans-serif;
-        color: black;
-        padding-left: 5px;
-        text-align: justify;
-        font-size: 18px;
-    }
-
-    .precioProductoC {
-        background-color: #f1f2f2;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-        padding-top: 5px;
-        padding-left: 10px;
-        color: black;
-        text-align: justify;
-        font-size: 20px;
+    .flexContainerC {
+        width: 100%;
+        height: auto; 
+        padding: 50px;
+        display: flex; 
+        gap: 10px; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        align-items: center; 
+        align-content: center;
+        .flexItemC {
+            background-color: white;
+            width: 200px;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+                transition: .3s all ease;
+            }
+            .textoProductoC {
+                background-color: white;
+                font-family: 'Quicksand', sans-serif;
+                color: black;
+                padding-left: 5px;
+                text-align: justify;
+                font-size: 18px;
+            }
+            .precioProductoC {
+                background-color: #f1f2f2;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-left: 10px;
+                color: black;
+                text-align: justify;
+                font-size: 20px;
+            }
+        }
     }
 
     .flexContainer {
@@ -87,30 +92,70 @@
             img:hover {
                     transform: scale(1.2);
                     box-shadow: 9px 18px 20px 0px rgb(0 0 0 / 40%);
-                    }
+                }
+            .textoProducto {
+                font-family: 'Quicksand', sans-serif;
+                color: black;
+                text-align: justify;
+                font-size: 18px;
+                }
+            .precioProducto {
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                color: black;
+                padding-top: 5px;
+                text-align: justify;
+                font-size: 20px;
+                }
         }
     }
+}
 
+
+@media screen and (max-width: 860px) {
+    #section1{
+    .flexContainer {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        gap: 10px; 
+        flex-direction: row;
+        justify-content: center; 
+        flex-wrap: wrap;
+        .flexItem {
+            img{
+            width: 80%;
+            height: auto;
+            img:hover {
+                transform: none; 
+            }
+            }
+            .textoProducto {
+            font-family: 'Quicksand', sans-serif;
+            color: black;
+            text-align: justify;
+            font-size: 16px;
+            }
+            .precioProducto {
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                color: black;
+                padding-top: 2px;
+                text-align: justify;
+                font-size: 18px;
+            }
+        }
+    }
     .flexContainerC {
         width: 100%;
-        height: auto; 
-        padding: 50px;
-        display: flex; 
+        height: auto;
+        padding: 10px;
+        display: flex;
         gap: 10px; 
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: space-around; 
-        align-items: center; 
-        align-content: center;
-        .flexItemC {
-            background-color: white;
-            width: 200px;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                transition: .3s all ease;
-            }
+        flex-direction: row;
+        justify-content: center; 
+        flex-wrap: wrap;
         }
     }
 }

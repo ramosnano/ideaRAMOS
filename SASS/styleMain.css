@@ -25,21 +25,29 @@
 }
 
 /*FLEX*/
-#section1 .textoProducto {
-  font-family: "Quicksand", sans-serif;
-  color: black;
-  text-align: justify;
-  font-size: 18px;
+#section1 .flexContainerC {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
-#section1 .precioProducto {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  color: black;
-  padding-top: 5px;
-  text-align: justify;
-  font-size: 20px;
+#section1 .flexContainerC .flexItemC {
+  background-color: white;
+  width: 200px;
+  height: auto;
 }
-#section1 .textoProductoC {
+#section1 .flexContainerC .flexItemC img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s all ease;
+}
+#section1 .flexContainerC .flexItemC .textoProductoC {
   background-color: white;
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -47,7 +55,7 @@
   text-align: justify;
   font-size: 18px;
 }
-#section1 .precioProductoC {
+#section1 .flexContainerC .flexItemC .precioProductoC {
   background-color: #f1f2f2;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -82,25 +90,61 @@
   transform: scale(1.2);
   box-shadow: 9px 18px 20px 0px rgba(0, 0, 0, 0.4);
 }
-#section1 .flexContainerC {
-  width: 100%;
-  height: auto;
-  padding: 50px;
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+#section1 .flexContainer .flexItem .textoProducto {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  text-align: justify;
+  font-size: 18px;
 }
-#section1 .flexContainerC .flexItemC {
-  background-color: white;
-  width: 200px;
-  height: auto;
+#section1 .flexContainer .flexItem .precioProducto {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-top: 5px;
+  text-align: justify;
+  font-size: 20px;
 }
-#section1 .flexContainerC .flexItemC img {
-  width: 100%;
-  height: auto;
-  transition: 0.3s all ease;
+
+@media screen and (max-width: 860px) {
+  #section1 .flexContainer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #section1 .flexContainer .flexItem img {
+    width: 80%;
+    height: auto;
+  }
+  #section1 .flexContainer .flexItem img img:hover {
+    transform: none;
+  }
+  #section1 .flexContainer .flexItem .textoProducto {
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+  }
+  #section1 .flexContainer .flexItem .precioProducto {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    color: black;
+    padding-top: 2px;
+    text-align: justify;
+    font-size: 18px;
+  }
+  #section1 .flexContainerC {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=styleMain.css.map */
