@@ -1,11 +1,87 @@
-.main {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+#body {
+  background-color: hsl(0deg, 100%, 50%);
+  background-image: radial-gradient(at 40% 20%, hsl(28deg, 100%, 74%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(189deg, 100%, 56%) 0px, transparent 50%), radial-gradient(at 0% 50%, hsl(355deg, 100%, 93%) 0px, transparent 50%), radial-gradient(at 80% 50%, hsl(340deg, 100%, 76%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(22deg, 100%, 77%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(242deg, 100%, 70%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(343deg, 100%, 76%) 0px, transparent 50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#deportesContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45px auto auto auto auto auto auto;
+  height: 100vh;
+}
+#deportesContainer #promoTop {
+  background-color: #f1f2f2;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+#deportesContainer #imagenFondo {
+  height: 490px;
+  width: 100%;
+  background-image: url("../assets/imagendeportiva.jpg");
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+#deportesContainer #header {
+  background-color: white;
+}
+#deportesContainer #header .logo {
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#deportesContainer #header .logo h1 {
+  font-size: 40px;
+}
+#deportesContainer #header .logo h1 a {
+  text-decoration: none;
+  color: black;
+}
+#deportesContainer #header .menuInicial {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#deportesContainer #header .menuInicial a {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 10px;
+  margin: 1px 10px;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
+  display: inline-block;
+  min-width: 170px;
+  text-align: center;
+}
+#deportesContainer #header .menuInicial a:hover {
+  background: rgba(161, 124, 153, 0.547);
+  color: white;
+}
+#deportesContainer .main {
   background-color: #f1f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main__tituloMain {
+#deportesContainer .main__tituloMain {
   color: black;
   font-family: "Quicksand", sans-serif;
   text-align: center;
@@ -14,18 +90,16 @@
   padding-bottom: 15px;
   font-size: 20px;
 }
-.main__tituloMain h2 {
+#deportesContainer .main__tituloMain h2 {
   font-weight: bold;
 }
-.main__textoMain {
+#deportesContainer .main__textoMain {
   font-family: "Quicksand", sans-serif;
   color: white;
   margin: 30px;
   text-align: justify;
 }
-
-/*FLEX*/
-#section1 .flexContainerC {
+#deportesContainer #section1 .flexContainerC {
   width: 100%;
   height: auto;
   padding: 50px;
@@ -37,17 +111,17 @@
   align-items: center;
   align-content: center;
 }
-#section1 .flexContainerC .flexItemC {
+#deportesContainer #section1 .flexContainerC .flexItemC {
   background-color: white;
   width: 200px;
   height: auto;
 }
-#section1 .flexContainerC .flexItemC img {
+#deportesContainer #section1 .flexContainerC .flexItemC img {
   width: 100%;
   height: auto;
   transition: 0.3s all ease;
 }
-#section1 .flexContainerC .flexItemC .textoProductoC {
+#deportesContainer #section1 .flexContainerC .flexItemC .textoProductoC {
   background-color: white;
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -55,7 +129,7 @@
   text-align: justify;
   font-size: 18px;
 }
-#section1 .flexContainerC .flexItemC .precioProductoC {
+#deportesContainer #section1 .flexContainerC .flexItemC .precioProductoC {
   background-color: #f1f2f2;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -65,7 +139,7 @@
   text-align: justify;
   font-size: 20px;
 }
-#section1 .flexContainer {
+#deportesContainer #section1 .flexContainer {
   width: 100%;
   height: auto;
   padding: 25px;
@@ -77,26 +151,26 @@
   align-items: center;
   align-content: center;
 }
-#section1 .flexContainer .flexItem {
+#deportesContainer #section1 .flexContainer .flexItem {
   width: 200px;
   height: auto;
 }
-#section1 .flexContainer .flexItem img {
+#deportesContainer #section1 .flexContainer .flexItem img {
   width: 100%;
   height: auto;
   transition: 0.3s all ease;
 }
-#section1 .flexContainer .flexItem img:hover {
+#deportesContainer #section1 .flexContainer .flexItem img:hover {
   transform: scale(1.2);
   box-shadow: 9px 18px 20px 0px rgba(0, 0, 0, 0.4);
 }
-#section1 .flexContainer .flexItem .textoProducto {
+#deportesContainer #section1 .flexContainer .flexItem .textoProducto {
   font-family: "Quicksand", sans-serif;
   color: black;
   text-align: justify;
   font-size: 18px;
 }
-#section1 .flexContainer .flexItem .precioProducto {
+#deportesContainer #section1 .flexContainer .flexItem .precioProducto {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   color: black;
@@ -104,9 +178,191 @@
   text-align: justify;
   font-size: 20px;
 }
+#deportesContainer #section2 h5 p {
+  background-color: white;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#deportesContainer #section2 h8 p {
+  padding: 5px;
+  font-size: 17px;
+}
+#deportesContainer #section3 h8 p {
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 17px;
+}
+#deportesContainer .footer {
+  width: 100%;
+  background-color: #f1f2f2;
+  padding: 10px;
+}
+#deportesContainer .footer .footerContainer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+}
+#deportesContainer .footer .footerContainer .tituloFooter {
+  font-size: 20px;
+  font-weight: bold;
+}
+#deportesContainer .footer .footerContainer .menuFooter h8 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+#deportesContainer .footer .footerContainer .menuFooter a {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  display: inline-block;
+}
+#deportesContainer .footer .footerContainer ul li {
+  list-style: none;
+}
+#deportesContainer #section1 #cargaContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+#deportesContainer #section1 #cargaContainer .ayuda .datosCon {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  padding: 1px 30px;
+  font-size: 17px;
+  margin: 5px;
+  padding-bottom: 10px;
+  text-align: justify;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#deportesContainer #section1 #cargaContainer .datosMensaje {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#deportesContainer #section1 #cargaContainer .datosConfirmacion {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#deportesContainer #section1 #cargaContainer .datosEnviarLimpiar {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 @media screen and (max-width: 860px) {
-  #section1 .flexContainer {
+  #deportesContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto auto auto auto auto;
+    height: 100vh;
+  }
+  #deportesContainer #header .menuInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #deportesContainer #header .menuInicial a {
+    font-family: "Quicksand", sans-serif;
+    padding: 5px 5px;
+    margin: 1px 5px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    display: inline-block;
+    min-width: 100%;
+    text-align: center;
+  }
+  #deportesContainer .main__tituloMain {
+    width: 100%;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 20px;
+  }
+  #deportesContainer .main__tituloMain h2 {
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    align-content: center;
+  }
+  #deportesContainer #imagenFondo {
+    display: none;
+  }
+  #deportesContainer #section2 h8 p {
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+  }
+  #deportesContainer .footer {
+    width: 100%;
+    background-color: #f1f2f2;
+    padding: 10px;
+  }
+  #deportesContainer .footer .footerContainer .footerCol3 h8 {
+    font-size: 10px;
+    color: black;
+  }
+  #deportesContainer .footer .footerContainer a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: #666;
+  }
+  #deportesContainer .footer .footerContainer .tituloFooter {
+    font-size: 15px;
+  }
+  #deportesContainer .footer .footerContainer .footerCol2 {
+    display: none;
+  }
+  #deportesContainer .ayuda .datosCon {
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    padding: 1px 20px;
+    font-size: 12px;
+    margin: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+    border-radius: 10px;
+  }
+  #deportesContainer .datosMensaje {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #deportesContainer #section1 .flexContainer {
     width: 100%;
     height: auto;
     padding: 10px;
@@ -116,20 +372,20 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  #section1 .flexContainer .flexItem img {
+  #deportesContainer #section1 .flexContainer .flexItem img {
     width: 80%;
     height: auto;
   }
-  #section1 .flexContainer .flexItem img img:hover {
+  #deportesContainer #section1 .flexContainer .flexItem img img:hover {
     transform: none;
   }
-  #section1 .flexContainer .flexItem .textoProducto {
+  #deportesContainer #section1 .flexContainer .flexItem .textoProducto {
     font-family: "Quicksand", sans-serif;
     color: black;
     text-align: justify;
     font-size: 16px;
   }
-  #section1 .flexContainer .flexItem .precioProducto {
+  #deportesContainer #section1 .flexContainer .flexItem .precioProducto {
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
     color: black;
@@ -137,7 +393,7 @@
     text-align: justify;
     font-size: 18px;
   }
-  #section1 .flexContainerC {
+  #deportesContainer #section1 .flexContainerC {
     width: 100%;
     height: auto;
     padding: 10px;
